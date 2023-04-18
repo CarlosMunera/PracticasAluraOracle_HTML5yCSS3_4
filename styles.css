@@ -164,6 +164,34 @@ th {
     width: 100%;
 }
 
+
+/* Selecciona solo los p hijos del main */
+
+main>p {
+    background: red;
+}
+
+
+/* Seleccion de imagen y parrafo siguiente */
+
+img+p {
+    background: yellow;
+}
+
+
+/* Seleccion de todos los parrafos despues de la imagen */
+
+img~p {
+    background-color: green;
+}
+
+
+/*  */
+
+.principal p:not(#mision) {
+    background: orange;
+}
+
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
